@@ -2,3 +2,4 @@ pillow
 pandas
 scikit-learn
 numpy
+openpyxl
