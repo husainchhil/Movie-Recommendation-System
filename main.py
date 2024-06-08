@@ -16,7 +16,7 @@ st.set_page_config(
 
 st.header('🍿What do you wanna watch today?')
 
-@st.cache_data(show_spinner="Fetching Data")
+@st.cache_data(show_spinner="Fetching Data (Average waitinng time : 1 minute)")
 def read_data():
     movies = pd.read_csv('data/movies.csv')
     ratings = pd.read_excel('data/ratings.xlsx')
