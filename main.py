@@ -14,7 +14,7 @@ st.set_page_config(
 
 ## genres filter to be added.
 
-st.header('🍿What do you wanna watch today?')
+st.header('🍿Let\'s get you something to watch today!')
 
 @st.cache_data(show_spinner="Fetching Data (Average waitinng time : 1 minute)")
 def read_data():
@@ -64,7 +64,7 @@ def recommender(title):
     return find_similar_movies(result.iloc[0]['movieId'])
 
 
-title = st.text_input('Enter the movie you like')
+title = st.text_input('Search for a movie you like 🥰')
 
 if title:
     df = recommender(title)
