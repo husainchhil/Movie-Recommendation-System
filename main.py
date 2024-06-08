@@ -19,7 +19,7 @@ st.header('🍿What do you wanna watch today?')
 @st.cache_data(show_spinner="Fetching Data")
 def read_data():
     movies = pd.read_csv('data/movies.csv')
-    ratings = pd.read_csv('data/ratings.csv')
+    ratings = pd.read_excel('data/ratings.xlsx')
     return movies, ratings
 
 movies, ratings = read_data()
